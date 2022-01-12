@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "yang_9p6b",
+    "password": "soft674Fish",
+    "database": "yang_9p6b_db",
+    "host": "web-applications.caj7agbzaqsl.us-west-1.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
