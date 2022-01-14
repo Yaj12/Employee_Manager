@@ -1,6 +1,6 @@
 mixin employeeForm(url, employee, jobtitles, stateslist)
 
-    form(action=url method='post')
+    form.employee-form(action=url method='post')
         label(for='firstname') First Name:
         input(id='firstname' name='firstname' type='text' value=employee.firstname)
 
@@ -37,12 +37,16 @@ mixin employeeForm(url, employee, jobtitles, stateslist)
                     input(id='zip' name='zip' type='number' value=employee.zip)
 
         div.personal-info-row
-                    div.phone
-                        label(for='phonenumber') Phone Number:
-                        input(id='phonenumber' name='phonenumber' type='number' value=employee.phonenumber)
+            div.phone
+                label(for='phonenumber') Phone Number:
+                input(id='phonenumber' name='phonenumber' type='number' value=employee.phonenumber)
 
             div.year
                 label(for='yearhired') Year Hired:
                 input(id='yearhired' name='yearhired' type='number' value=employee.yearhired)
 
-        button(type='submit') Submit
+        div.form-buttons
+            a(href='/') Cancel
+            if employee.id
+                a.button.delete(href=`/delete/${employee.id}`) Delete Employee
+            button.button.submit(type='submit') Submit
