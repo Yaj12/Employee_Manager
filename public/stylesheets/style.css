@@ -104,10 +104,39 @@ tr:nth-child(2n) td{
 }
 .employee-form label{
   display:block;
-  border-radius: 12px;
-  padding: 20px;
-  max-width: 750px;
+  font-weight:bold;
+  color: #71717A;
 }
 .employee-form input {
   padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #CCC;
+  box-shadow: none;
+  margin-bottom: 8px;
+}
+.streetline {
+  display:flex;
+  gap: 16px;
+}
+.streetline1 {
+  flex: 3;
+  margin-right: 16px;
+}
+.streetline1 input {
+  width: 100%;
+}
+streetline2 {
+  flex: 1;
+}
+.territory {
+  display: flex;
+}
+.city, .state {
+  margin-right: 16px;
+}
+.name-row{
+  display:flex;
+}
+.first{
+  margin-right: 16px;
 }
